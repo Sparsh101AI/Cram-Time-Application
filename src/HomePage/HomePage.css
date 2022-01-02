@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #a0abe3;
+  font-family: Ubuntu, serif;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+.box {
+  display: flex;
+  height: 100vh;
+  font: Ubuntu, serif;
+  align-items: center;
+}
+.col1 {
+  flex: 4;
+  text-align: left;
+}
+.col1 img {
+  width: 100%;
+  position: relative;
+  top: 20px;
+}
+.col2 {
+  flex: 6;
+  text-align: left;
+  height: 55%;
+  padding-left: 3%;
+  margin-left: 2%;
+}
+
+.col2 h1 {
+  color: #384c68;
+  font-weight: 400;
+  font-size: 38pt;
+  margin-bottom: 3%;
+  letter-spacing: 1px;
+}
+.col2 h1 strong {
+  color: #f7c331;
+  text-shadow: 2px 2px #e6a800;
+}
+
+.col2 h2 {
+  color: #ffffff;
+  font-size: 27pt;
+  font-weight: 300;
+  margin-bottom: 9%;
+}
+
+.btn {
+  background-color: white;
+  border: none;
+  font-size: 24pt;
+  color: #384c68;
+  padding: 1.5% 0;
+  width: 50vh;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+/*#B2BEFC*/
+.btn:hover {
+  background-color: #384c68;
+  color: #f7c331;
+}
+
+.circle {
+  position: relative;
+  z-index: -1;
+  width: 500px;
+  height: 500px;
+  background-color: #b2befc;
+}
