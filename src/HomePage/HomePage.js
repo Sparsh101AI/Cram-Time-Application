@@ -1,6 +1,7 @@
 import "./HomePage.css";
 import image1 from "../images/image1.png";
 import Particles from "react-tsparticles";
+import { Typewriter, useTypewriter, Cursor } from 'react-simple-typewriter'
 
 function HomePage() {
   const particlesInit = (main) => {
@@ -101,10 +102,27 @@ function HomePage() {
           <img src={image1} alt="idk" />
         </div>
         <div className="col2">
-          <h1>
-            Why Study Alone, When You <br /> Can Study With{" "}
-            <strong>Friends</strong>
-          </h1>
+       
+        <h1 >
+        Why Study Alone, When You <br /> Can Study With{" "}
+       
+        <span>
+          {/* Style will be inherited from the parent element */}
+         <strong>
+          <Typewriter
+            words={['Friends', 'Peers', 'Classmates']}
+            loop={5}
+            cursor
+            cursorStyle='_'
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+             />
+          </strong>
+        </span>
+       
+      </h1>
+
           <h2>Get started now and start studying together</h2>
           <button className="btn">Join Now</button>
         </div>
