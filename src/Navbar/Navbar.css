@@ -10,13 +10,13 @@
   z-index: 1;
   background: none !important;
 }
-.logo {
-  flex: 8;
-  text-align: center !important;
-  background: none !important;
-}
-.Options {
+.Logo {
   flex: 2;
+  text-align: center;
+}
+
+.Options {
+  flex: 8;
   text-align: right;
   font-size: 23px;
   font-weight: 300;
@@ -34,8 +34,18 @@
   font-family: Poppins;
   color: #fff;
   background: none !important;
+  position: relative;
 }
-
-.option:hover {
-  color: #384c68;
+.option:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s ease-in-out;
+}
+.option:hover::after {
+  width: 100%;
 }
