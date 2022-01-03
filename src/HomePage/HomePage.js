@@ -111,7 +111,7 @@ function HomePage() {
          <strong>
           <Typewriter
             words={['Friends', 'Peers', 'Classmates']}
-            loop={5}
+            loop
             cursor
             cursorStyle='_'
             typeSpeed={70}
