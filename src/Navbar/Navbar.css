@@ -43,7 +43,7 @@
   background: #fff;
   position: absolute;
   left: 0;
-  bottom: -6px;
+  bottom: -3px;
   transition: 0.5s ease-in-out;
 }
 .option:hover::after {
