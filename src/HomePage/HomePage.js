@@ -125,7 +125,6 @@ function HomePage() {
           <button className="btn">Join Now</button>
         </div>
       </div>
-      <hr className="line" />
       <div className="Feature">
         <div className="col3">
           <img src={image2} alt="idk" />

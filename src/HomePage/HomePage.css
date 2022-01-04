@@ -18,8 +18,8 @@
 }
 
 .line {
-  background-color: lightgrey;
-  border: 1px solid lightgray;
+  background-color: white;
+  border: 1px solid white;
   border-radius: 1px;
   height: 1px;
   margin: auto;
@@ -103,6 +103,7 @@
   width: 100%;
   position: relative;
   top: 20px;
+  margin-top: -50%;
 }
 
 .col4 {
@@ -120,7 +121,7 @@
   font-size: 32pt;
   font-weight: 400;
   color: #384c68;
-  margin-top: -7%;
+  margin-top: -40%;
   margin-bottom: 4%;
 }
 

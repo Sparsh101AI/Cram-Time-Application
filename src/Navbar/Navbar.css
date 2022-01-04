@@ -3,16 +3,31 @@
 
 .Navbar {
   display: flex;
-  width: 90%;
-  padding: 3vh 0;
-  margin: 0 5%;
+  width: 100%;
+  padding: 3.5vh 0;
   position: fixed;
   z-index: 1;
-  background: none !important;
+  transition: 0.3s ease-in-out;
+}
+.NavbarScroll {
+  display: flex;
+  width: 100%;
+  padding: 3.5vh 0;
+  position: fixed;
+  z-index: 1;
+  background: white;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 3px 1.5rem rgba(0, 0, 0, 0.2);
 }
 .Logo {
   flex: 2;
   text-align: center;
+  padding-left: 10vh;
+}
+
+.Logo h1 {
+  font-family: Poppins;
+  font-weight: 300;
 }
 
 .Options {
@@ -21,6 +36,7 @@
   font-size: 23px;
   font-weight: 300;
   background: none !important;
+  padding-right: 10vh;
 }
 
 .Options span {
@@ -35,6 +51,7 @@
   color: #fff;
   background: none !important;
   position: relative;
+  transition: 0.3s ease-in-out;
 }
 .option:after {
   content: "";
@@ -47,5 +64,27 @@
   transition: 0.5s ease-in-out;
 }
 .option:hover::after {
+  width: 100%;
+}
+
+.optionScroll {
+  text-decoration: none;
+  font-family: Poppins;
+  color: #384c68;
+  background: none !important;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.optionScroll:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background: #384c68;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  transition: 0.5s ease-in-out;
+}
+.optionScroll:hover::after {
   width: 100%;
 }
