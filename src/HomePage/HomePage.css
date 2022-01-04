@@ -16,6 +16,15 @@
   align-items: center;
   justify-content: center;
 }
+
+.line {
+  background-color: lightgrey;
+  border: 1px solid lightgray;
+  border-radius: 1px;
+  height: 1px;
+  margin: auto;
+}
+
 .col1 {
   flex: 4;
   text-align: left;
@@ -78,6 +87,47 @@
   background-color: #b2befc;
 }
 
+.Feature {
+  display: flex;
+  height: 100vh;
+  font: Ubuntu, serif;
+  align-items: center;
+  justify-content: center;
+}
+.col3 {
+  flex: 4;
+  order: 2;
+  text-align: left;
+}
+.col3 img {
+  width: 100%;
+  position: relative;
+  top: 20px;
+}
+
+.col4 {
+  order: 1;
+  flex: 6;
+  text-align: left;
+}
+.col4 h2 {
+  color: #ffffff;
+  font-size: 27pt;
+  font-weight: 300;
+}
+
+.header {
+  font-size: 32pt;
+  font-weight: 400;
+  color: #384c68;
+  margin-top: -7%;
+  margin-bottom: 4%;
+}
+
+.header strong {
+  color: #f7c331;
+  text-shadow: 2px 2px #e6a800;
+}
 #tsparticles {
   position: relative;
   z-index: -1;
